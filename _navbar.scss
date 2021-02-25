@@ -1,0 +1,71 @@
+/* NAVBAR START */
+
+.navbar{
+    background-color:transparent;
+    padding: 15px;
+    transition: .7s ease;
+    .navbar-brand{
+        padding-left: 20px;
+    }
+    img{
+        width: 7rem;
+    }
+    button.navbar-toggler:focus{
+        outline: none !important;
+    }
+    .navbar-toggler-icon{
+        padding-top: .5rem;
+        color: white;
+    }
+    .navbar-nav{
+        text-align: center;
+        .nav-link{
+            color:white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-right: 20px;
+            letter-spacing: 3px;
+            font-size: 15px;
+            transition: .7s ease;
+            &::after{
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: white;
+                transition: width .3s;
+            }
+            &:hover{
+                &::after{
+                    width: 100%;
+                    transition: width .3s;
+                }
+            }
+            .active{
+                color: rgb(189, 189, 189);
+                font-size: 17px;
+            }        
+        }     
+        #booking{
+            border: 1px solid transparent;
+            display: inline-block;
+            padding: .5rem;
+            border-radius: 20px;
+            color: white;
+            background-color: $bookingColor;
+            &:hover{
+                background-color: rgb(8, 8, 131);
+                
+            }
+        }
+    }
+}
+.nav-sec{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 1s ease-in-out;
+}
+.navbar-two{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+/* NAVBAR END */

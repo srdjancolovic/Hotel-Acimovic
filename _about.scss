@@ -1,0 +1,54 @@
+/* ABOUT START */
+
+.about{
+    &::before{
+        content: '';
+        height: 81.36px;
+        margin-top: -81.36px;
+        display: block;    
+    }
+    h1{
+        font-size: $h1FontSize;
+        text-align: center;
+        padding-top: 50px;
+        letter-spacing: $h1LetterSpacing;
+    }
+    p{
+        @include paragraph();
+        &::before{
+            @include beforeElement();
+            padding-bottom: 20px;
+            
+        }
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 50px;
+        .list-1{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            text-decoration: none;
+
+            li{
+                padding-right: 45px;
+                font-size: 40px;
+            }
+        }
+        .list-2{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            text-decoration: none;
+            
+            li{
+                padding-right: 45px;
+                font-size: 40px;
+            }
+        }
+    }
+}
+/* ABOUT END */

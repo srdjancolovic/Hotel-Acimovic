@@ -1,0 +1,80 @@
+/* ROOMS START */
+
+.rooms{
+    margin-bottom: 69px;
+    &::before{
+        content: '';
+        height: 81.36px;
+        margin-top: -81.36px;
+        display: block;
+        
+    }
+    h1{
+        font-size: $h1FontSize;
+        text-align: center;
+        padding-top: 50px;
+        letter-spacing: $h1LetterSpacing;
+    }
+    h2{
+        text-align: center;
+        padding-top: 30px;
+        letter-spacing: $h2LetterSpacing;
+    }
+    p{
+        @include paragraph();
+        position: relative;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 40px;
+        &::before{
+            @include beforeElement();
+            padding-left: 40px;   
+        }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        margin-right: 20px;
+        list-style: none;
+        li{
+            a{
+                font-size: 17px;
+                text-decoration: none;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding: 20px;
+                padding-left: 23px;
+                border-radius: 20px;
+                background-color: $bookingColor;
+                color: white;
+                transition: .5s ease background-color;
+                &:hover{
+                    background-color: rgb(8, 8, 131);
+                }
+            }
+            
+        }
+    }
+    .carousel-indicators{
+        padding-bottom: 15px;
+    }
+    .carousel-inner{
+        padding-top: 40px;
+        height: 700px;
+        padding-right: 100px;
+        .carousel-item{
+            background-size: cover;
+            max-width: 100%;
+            max-height: 100%;
+            .banner{
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 700px;
+            }
+        }
+    }
+}
+/* ROOMS END */

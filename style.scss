@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    padding: env(safe-area-inset);
+    overflow-x: hidden;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+@import './var&func';
+@import './navbar';
+@import './carousel';
+@import './about';
+@import './rooms';
+@import './contact';
+@import './media-query';
+
+
